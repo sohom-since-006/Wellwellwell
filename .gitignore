@@ -8,10 +8,17 @@ Thumbs.db
 *.swp
 *.swo
 
+# Compiled Binaries & Build Artifacts
+*.exe
+*.o
+*.obj
+*.out
+*.app
+bin/
+build/
+dist/
+
 # Node / Web builds (if any dependencies added in future)
 node_modules/
-dist/
-build/
 .next/
 *.log
-
