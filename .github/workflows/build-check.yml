@@ -1,0 +1,38 @@
+name: C/C++ Laboratory CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Build Tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc g++ make
+
+      - name: Verify Compiler
+        run: |
+          gcc --version
+          g++ --version
+
+      - name: Run Build Check on Core Programs
+        run: |
+          mkdir -p bin
+          g++ -std=c++17 -Wall -Wextra "Power of 2 bitwise.cpp" -o bin/power2
+          g++ -std=c++17 -Wall -Wextra "Odd Even Bitwise op.cpp" -o bin/oddeven
+          g++ -std=c++17 -Wall -Wextra "Swapping using Bittwise.cpp" -o bin/swap
+          echo "Core programs compiled cleanly."
+
+      - name: Test Core Algorithms
+        run: |
+          python3 scripts/run_tests.py
