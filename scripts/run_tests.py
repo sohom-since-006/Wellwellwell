@@ -53,11 +53,11 @@ def main():
     print("Running algorithm invariant tests...")
     try:
         test_bitwise_power_of_two()
-        print("  ✓ Bitwise Power of Two passed")
+        print("  [PASS] Bitwise Power of Two")
         test_bitwise_parity()
-        print("  ✓ Bitwise Parity passed")
+        print("  [PASS] Bitwise Parity")
         test_magic_square_invariants()
-        print("  ✓ Magic Square Invariant (Siamese Method) passed")
+        print("  [PASS] Magic Square Invariant (Siamese Method)")
         print("\nAll algorithm invariant tests passed successfully.")
         return 0
     except AssertionError as err:
