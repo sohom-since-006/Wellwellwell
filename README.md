@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/Language-C%20%7C%20C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C/C++" />
   <img src="https://img.shields.io/badge/Focus-Data%20Structures%20%26%20Systems-00F0FF?style=for-the-badge" alt="Focus" />
   <img src="https://img.shields.io/badge/Author-Sohom%20Paul-FF007F?style=for-the-badge" alt="Author" />
+  <img src="https://img.shields.io/badge/CI-GitHub%20Actions-blue?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
 
@@ -140,11 +141,24 @@ g++ "Magic Square.cpp" -o MagicSquare.exe
 ./MagicSquare.exe
 ```
 
-### Batch Compilation (Compile All):
-```powershell
-# In PowerShell:
-Get-ChildItem -Filter *.cpp | ForEach-Object { g++ $_.Name -o "$($_.BaseName).exe" }
+### Automated Build & Test Tools:
+```bash
+# 1. Using GNU Make:
+make all        # Compile all programs into bin/
+make bitwise    # Compile bitwise manipulation programs
+make arrays     # Compile array algorithms
+make clean      # Clean all binaries
+
+# 2. Using PowerShell Build Script:
+pwsh scripts/build_all.ps1
+
+# 3. Running Algorithm Correctness Tests:
+python3 scripts/run_tests.py
 ```
+
+### 📚 Additional Documentation:
+- [Algorithm Complexity & Bitwise Invariant Guide](docs/COMPLEXITY_GUIDE.md)
+- [Open Source Contributing Guidelines](CONTRIBUTING.md)
 
 ---
 
