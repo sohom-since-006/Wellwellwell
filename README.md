@@ -65,7 +65,7 @@ pwsh scripts/build_all.ps1
 ## 📈 Real-Time GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=sohom-since-006&show_icons=true&theme=tokyonight&hide_border=true&title_color=00F0FF&icon_color=FF007F" width="49%" alt="GitHub Stats" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=sohom-since-006&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&title_color=00F0FF&icon_color=FF007F" width="49%" alt="GitHub Stats" />
   <img src="https://streak-stats.demolab.com/?user=sohom-since-006&theme=tokyonight&hide_border=true&ring=00F0FF&fire=FF007F&currStreakLabel=00F0FF" width="49%" alt="GitHub Streak" />
 </p>
 
