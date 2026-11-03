@@ -1,3 +1,6 @@
 [submodule "About-Me"]
 	path = About-Me
 	url = https://github.com/sohom-since-006/About-Me.git
+[submodule "sohom-since-006"]
+	path = sohom-since-006
+	url = https://github.com/sohom-since-006/sohom-since-006.git
