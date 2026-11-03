@@ -1,180 +1,163 @@
-<table>
-  <tr>
-    <td width="55%" valign="top">
 <div align="center">
 
-# ⚡ SOHOM PAUL (sohom-since-006) ⚡
-### 🚀 Computer Science & Engineering Undergraduate | Full-Stack & Systems Craftsman | Visual Storyteller
-I'm passionate about technology, development, and creativity. I love building projects, exploring new technologies, and turning ideas into reality.
-
+# 💻 C & C++ Core Programming Laboratory
+### 🚀 Comprehensive Repository of Algorithms, Bitwise Mechanics, Memory Management & Systems Logic
 
 <p align="center">
-  <a href="https://github.com/sohom-since-006">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&width=620&lines=Full-Stack+%26+Next.js+Architect;C%2FC%2B%2B+Systems+%26+Core+Logic+Explorer;AI+%26+Computer+Vision+Enthusiast;Founder+%26+Editor+%40+Clips+Kinetics" alt="Typing SVG" />
-  </a>
+  <img src="https://img.shields.io/badge/Language-C%20%7C%20C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C/C++" />
+  <img src="https://img.shields.io/badge/Focus-Data%20Structures%20%26%20Systems-00F0FF?style=for-the-badge" alt="Focus" />
+  <img src="https://img.shields.io/badge/Author-Sohom%20Paul-FF007F?style=for-the-badge" alt="Author" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/sohom-since-006"><img src="https://img.shields.io/github/followers/sohom-since-006?label=Followers&style=for-the-badge&color=00F0FF&logo=github" alt="GitHub Followers" /></a>
-  <a href="https://github.com/sohom-since-006?tab=repositories"><img src="https://img.shields.io/github/stars/sohom-since-006?label=Stars&style=for-the-badge&color=FF007F&logo=reverbnation" alt="Repo Stars" /></a>
-  <a href="https://clipskinetics.vercel.app/"><img src="https://img.shields.io/badge/Agency-Clips%20Kinetics-7928CA?style=for-the-badge&logo=vercel&logoColor=white" alt="Clips Kinetics" /></a>
-  <a href="https://www.linkedin.com/in/sohompaul06"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
+  Curated collection of foundational C and C++ programs exploring low-level memory allocation, bit-level manipulation, matrix generation algorithms, functions, strings, and mathematical series.
 </p>
 
 ---
 
 </div>
 
-## 🛰️ Operator Identity & System Dossier
-
-```yaml
-# ========================================================
-# [SYSTEM SPECIFICATION: OPERATOR PROFILE]
-# ========================================================
-OPERATOR:       Sohom Paul
-CALLSIGN:       Sohom ❤️
-DOMAIN:         Full-Stack Systems, Low-Level Logic, AI Solutions & Visual Motion
-INSTITUTION:    Asansol Engineering College (B.Tech in CSE, 2025 – 2029)
-CREATIVE ARM:   Clips Kinetics (Founder & Video Editor)
-CURRENT STATUS: Actively Building, Researching & Shipping Software
-BUT WHERE?:    [86.9833° E, 23.6833° N]
-```
-
-```ini
-[TELEMETRY_STATUS]
-UPTIME               = 99.9%
-RUNTIME_LOAD         = OPTIMAL
-FRAMEWORK_PIPELINE   = NEXT.JS / REACT / NODE
-LOW_LEVEL_KERNEL     = C / C++ / PYTHON
-DATABASE_LAYER       = POSTGRESQL / SUPABASE
-MISSION_DIRECTIVE    = BUILD RESILIENT & IMPACTFUL TECHNOLOGY
-```
-
----
-
-## ⚡ Telemetry Integrity Gauges
-
-- **Next.js & Modern Web Stack** `[████████░░]` 80% *(App Router, React 19, TypeScript, Tailwind CSS)*
-- **Full-Stack & Cloud Architecture** `[███████░░░]` 70% *(Supabase, REST APIs, PostgreSQL)*
-- **Systems & Algorithm Logic** `[████████░░]` 75% *(C, C++, Data Structures & Algorithms, LeetCode)*
-- **Machine Learning & AI Vision** `[██████░░░░]` 65% *(Classification Models, OpenCV, Explainable AI)*
-- **IoT & Embedded Systems** `[█████░░░░░]` 50% *(Sensors, Microcontrollers, Automation)*
-- **Video Production & Motion** `[██████████]` 99% *(Visual Storytelling, Clips Kinetics Engine)*
-
----
-
-## 🛠️ The Tech Arsenal
-
-### 💻 Programming Languages
-<p align="left">
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-</p>
-
-### 🌐 Frontend & Web Frameworks
-<p align="left">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-</p>
-
-### 🗄️ Backend, Databases & Infrastructure
-<p align="left">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST APIs" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-</p>
-
-### ⚙️ Developer Tools & Creative Media
-<p align="left">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-  <img src="https://img.shields.io/badge/Video_Editing-CapCut%20PC-000000?style=for-the-badge&logo=film&logoColor=white" alt="Video Editing" />
-</p>
-
----
-
-## 🚀 Key Projects & Flagship Systems
-
-| Project | Domain | Architecture / Tech | Highlights & Links |
-| :--- | :--- | :--- | :--- |
-| **[AI Animal Classification System](https://github.com/sohom-since-006/AI-animal-classification-system)** | AI / CV / Expert System | Python, OpenCV, Taxonomy Engine | Hybrid AI expert system with Explainable AI, Computer Vision, Voice Recognition, and taxonomy classification. |
-| **[Clips Kinetics](https://clipskinetics.vercel.app/)** | Creative Agency / Web | Next.js, React, Tailwind CSS | Official platform for creative video editing, motion design, and high-retention digital media solutions. |
-| **[MyCare Plus](https://github.com/sohom-since-006/Mycare-plus)** | HealthTech & AI | AI Assist, Full-Stack Web | Intelligent AI-powered personalized healthcare companion for streamlined medical guidance. |
-| **[Khabar Chakra](https://github.com/sohom-since-006/khabar-chakra)** | Social Impact Platform | Web Architecture, Realtime DB | Community-driven food donation platform connecting donors with NGOs to eradicate hunger and food waste. |
-| **[JSON Formatter & Validator](https://github.com/sohom-since-006/json-formatter)** | Developer Utilities | HTML5, CSS3, Vanilla JS | Clean, fast, modern JSON formatter and syntax tree validator with dark/light themes and collapsible nodes. |
-| **[Plant Species Classification](https://github.com/sohom-since-006/plant-species-classification-system)** | Computer Vision | Python, Machine Learning | Automated botanical taxonomy and plant health diagnostic classification system. |
-| **[LeetCode & C/C++ Systems](https://github.com/sohom-since-006/LeetCode)** | Algorithms & Core Systems | C, C++, Data Structures | Optimization solutions, memory management, pointers, and high-efficiency algorithmic problem-solving. |
-
----
-
-## 🎬 Creative Vanguard: Clips Kinetics
-
-> *"Great engineering builds the mechanism; cinematic visual storytelling gives it soul."*
-
-Beyond system programming and full-stack software, I direct and curate **[Clips Kinetics](https://clipskinetics.vercel.app/)** — a modern creative video editing and motion design agency delivering high-retention visual content, commercial edits, and digital storytelling.
-
-- 🎥 **Services**: High-Retention Edits, Motion Design, Color Grading, Social Hook Optimization
-- 🖥️ **Tooling**: CapCut PC Pro, Audio Mastering, Kinetic Typography
-- 🌐 **Portfolio & Inquiries**: [https://clipskinetics.vercel.app/](https://clipskinetics.vercel.app/)
-
----
-
-## 📈 Real-Time GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=sohom-since-006&show_icons=true&theme=tokyonight&hide_border=true&title_color=00F0FF&icon_color=FF007F" width="49%" alt="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com/?user=sohom-since-006&theme=tokyonight&hide_border=true&ring=00F0FF&fire=FF007F&currStreakLabel=00F0FF" width="49%" alt="GitHub Streak" />
-</p>
-
----
-
-## 🎓 Academic Path & Continuous Evolution
+## 📑 Program Index by Category
 
 ```text
-2025 — 2029 (Present)
-┌─────────────────────────────────────────────────────────────┐
-│  B.Tech in Computer Science & Engineering                   │
-│  Asansol Engineering College, West Bengal, India            │
-│  Focus: Core CS, OS, Algorithms, DBMS, Full-Stack, IoT & AI │
-└─────────────────────────────────────────────────────────────┘
+C-Programs/
+├── ⚡ Bitwise Operations & Manipulation
+├── 🔢 Arrays & 2D Matrix Algorithms (Magic Square)
+├── 🧠 Pointers & Dynamic Memory Allocation (malloc)
+├── 🔄 Functions, Prototypes & Calling Conventions
+├── 🔤 String Handling & Manipulation
+├── 🧮 Mathematical Series, Factorials & Calculations
+└── 📁 File I/O & Stream Handling
 ```
-
-- 📖 **Currently Deep Diving Into**: Low-Level System Architectures, High-Performance C/C++, Distributed Microservices, and Advanced React Compiler Paradigms.
-- 🎯 **Goals**: Building high-impact open-source tools, competing in global hackathons, and delivering scalable enterprise systems.
 
 ---
 
-## 📡 Signal Transmitter & Connect Coordinates
+## ⚡ 1. Bitwise Operations & Manipulation
 
-Feel free to reach out for collaborations, hackathons, freelance creative work, or tech discussions!
+Techniques for direct bit-level arithmetic, masking, and optimization:
 
-<p align="center">
-  <a href="mailto:paulsohom777@gmail.com">
-    <img src="https://img.shields.io/badge/Email-paulsohom777%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://www.linkedin.com/in/sohompaul06">
-    <img src="https://img.shields.io/badge/LinkedIn-Sohom%20Paul-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://clipskinetics.vercel.app/">
-    <img src="https://img.shields.io/badge/Agency-Clips%20Kinetics-7928CA?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-  <a href="https://instagram.com/sohom_since_006">
-    <img src="https://img.shields.io/badge/Instagram-@sohom__since__006-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
-</p>
+| Program File | Description | Core Bitwise Technique |
+| :--- | :--- | :--- |
+| **`Swapping using Bittwise.cpp`** | Swaps two integers without temporary variables. | `a ^= b; b ^= a; a ^= b;` (XOR swap) |
+| **`Power of 2 bitwise.cpp`** | Determines if a number is a power of 2 in $O(1)$. | `(n > 0) && ((n & (n - 1)) == 0)` |
+| **`Odd Even Bitwise op.cpp`** | Fast parity check without modulo operator. | `(n & 1) == 0` for even |
+| **`Number and bit position.cpp`** | Checks or inspects specific bit flags in an integer. | Bit shifting `(n >> pos) & 1` |
+| **`Multiple of 4.cpp`** | Validates if a number is divisible by 4 using bitmasking. | `(n & 3) == 0` |
+| **`Bitwise 2.cpp`** | Exploration of binary AND, OR, XOR, and bitshifts. | Bitwise truth tables |
+
+---
+
+## 🔢 2. Arrays & 2D Matrix Algorithms
+
+Matrix algorithms, array traversal, and dynamic patterns:
+
+| Program File | Description | Algorithmic Highlights |
+| :--- | :--- | :--- |
+| **`Magic Square.cpp`** | Generalized Magic Square generator for any odd order $N \times N$. | Siamese method: pre-calculated magic sum $M = \frac{N(N^2 + 1)}{2}$. |
+| **`Magic Square (sum=65).cpp`** | Specialized $5 \times 5$ Magic Square generator. | Row and column wrap-around logic yielding constant sum $65$. |
+| **`Array Ex.cpp`** | Basic array input, storage, and traversal demonstrations. | Contiguous memory traversal. |
+| **`Array Q.cpp`** & **`Array Q2.cpp`** | Array search, element comparison, and manipulation exercises. | Linear scan & array transformations. |
+| **`Array Q3.cpp`** | Advanced indexing and element filtering tasks. | Condition-based array partitioning. |
+
+---
+
+## 🧠 3. Pointers & Dynamic Memory Management
+
+Low-level memory allocation on the heap and pointer mechanics:
+
+| Program File | Description | Memory Concept |
+| :--- | :--- | :--- |
+| **`Malloc Code.cpp`** | Allocates dynamic memory on the heap for $N$ integers. | `ptr = (int*)malloc(n * sizeof(int));` with `NULL` validation. |
+| **`ptr 1.cpp`** | Basic pointer declarations, address-of (`&`), and dereferencing (`*`). | Pointer arithmetic & direct memory access. |
+
+---
+
+## 🔄 4. Functions & Calling Conventions
+
+Comprehensive demonstration of the four functional design patterns in C:
+
+| Program File | Category | Signature Pattern |
+| :--- | :--- | :--- |
+| **`No Argument No Return Value.cpp`** | Type 1 | `void functionName(void);` |
+| **`No argument and Value Return.cpp`** | Type 2 | `int functionName(void);` |
+| **`Argument and No Return Type.cpp`** | Type 3 | `void functionName(int, int);` |
+| **`Argument and Return Value.cpp`** | Type 4 | `int functionName(int, int);` |
+| **`prototype.cpp`** | Prototypes | Forward declaration syntax and linker resolution. |
+| **`Functions and Call.cpp`** | Execution Flow | Call stacks and scope isolation. |
+
+---
+
+## 🔤 5. Strings & Character Processing
+
+String manipulation using character arrays and standard library functions:
+
+| Program File | Description | Technique |
+| :--- | :--- | :--- |
+| **`Reverse a String.cpp`** | Reverses an input string in-place or via index traversal. | Two-pointer or reverse loop from `strlen(s) - 1`. |
+| **`Length of string using gets.cpp`** | String input reading and length counting. | Null-terminator `\0` detection. |
+
+---
+
+## 🧮 6. Mathematical Series, Factorials & Calculations
+
+Iterative algorithms for mathematical sequences and arithmetic operations:
+
+| Program File | Description | Mathematical Expression |
+| :--- | :--- | :--- |
+| **`Factorial of a Number Using Function.cpp`** | Computes $n!$ using modular function architecture. | $n! = \prod_{i=1}^n i$ |
+| **`Factorial add for Even.cpp`** | Calculates series sum of factorials of even numbers. | $\sum (2i)!$ |
+| **`Factorial and sum of Odd terms.cpp`** | Calculates series sum of factorials of odd numbers. | $\sum (2i - 1)!$ |
+| **`Factorial sum of n.cpp`** | Progressive sum of factorials from $1!$ to $n!$. | $\sum_{i=1}^n i!$ |
+| **`WAP to Reverse Number.cpp`** | Reverses an integer digit-by-digit. | `rev = rev * 10 + n % 10; n /= 10;` |
+| **`WAP to Reverse Number With functions.cpp`** | Functional implementation of integer reversal. | Modular decomposition of digit inversion. |
+| **`Calculator.cpp`** | Interactive menu-driven console calculator. | `switch-case` arithmetic dispatch. |
+| **`Sum of @ num.cpp`** | Basic arithmetic addition of numbers. | Standard input / output streams. |
+
+---
+
+## 📁 7. File Handling & Streams (`File Problems/`)
+
+Demonstrations of persistent storage access in C:
+
+| Program File | Description | Standard APIs |
+| :--- | :--- | :--- |
+| **`File Problems/Open File.cpp`** | Opening, checking pointer validity, and closing files. | `fopen()`, `fclose()`, `NULL` check |
+| **`File Problems/Sample.cpp`** | Reading and writing character data to/from disk files. | `fprintf()`, `fscanf()`, `fgetc()` |
+
+---
+
+## 🛠️ How to Compile & Run
+
+You can compile any of these programs using GCC / MinGW (`gcc` or `g++`) from the command line:
+
+### Using GCC / G++:
+```bash
+# Compile a C / C++ program
+g++ "Magic Square.cpp" -o MagicSquare.exe
+
+# Run the executable
+./MagicSquare.exe
+```
+
+### Batch Compilation (Compile All):
+```powershell
+# In PowerShell:
+Get-ChildItem -Filter *.cpp | ForEach-Object { g++ $_.Name -o "$($_.BaseName).exe" }
+```
+
+---
+
+## 👨‍💻 Author & Academic Background
+
+- **Author**: **Sohom Paul** ([@sohom-since-006](https://github.com/sohom-since-006))
+- **Degree**: B.Tech in Computer Science & Engineering (2025 – 2029)
+- **Institution**: Asansol Engineering College, West Bengal, India
+- **Agency Portfolio**: [Clips Kinetics](https://clipskinetics.vercel.app/)
+- **Contact**: [paulsohom777@gmail.com](mailto:paulsohom777@gmail.com) | [LinkedIn](https://www.linkedin.com/in/sohompaul06)
+
+---
 
 <div align="center">
-  <sub>Designed with precision & passion by <b>Sohom Paul</b> • Built to inspire & perform</sub>
+  <sub>Part of the <b>C & Systems Engineering Foundation</b> series by Sohom Paul.</sub>
 </div>
