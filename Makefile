@@ -6,19 +6,16 @@ CXX ?= g++
 CXXFLAGS ?= -std=c++17 -Wall -Wextra -O2
 BIN_DIR ?= bin
 
-SOURCES := $(wildcard *.cpp)
-OBJECTS := $(patsubst %.cpp, $(BIN_DIR)/%, $(SOURCES))
+SOURCES := $(wildcard *.cpp) $(wildcard algorithms/*/*.cpp) $(wildcard data_structures/*/*.cpp)
+OBJECTS := $(patsubst %.cpp, $(BIN_DIR)/%, $(notdir $(SOURCES)))
 
-.PHONY: all clean help bitwise arrays
+.PHONY: all clean help bitwise arrays dsa test
 
-all: $(BIN_DIR) $(OBJECTS)
+all: $(BIN_DIR)
+	@echo "Ready to compile laboratory targets."
 
 $(BIN_DIR):
 	mkdir -p $(BIN_DIR)
-
-$(BIN_DIR)/%: %.cpp | $(BIN_DIR)
-	@echo "Compiling $< -> $@"
-	@$(CXX) $(CXXFLAGS) "$<" -o "$@"
 
 bitwise: $(BIN_DIR)
 	@$(CXX) $(CXXFLAGS) "Swapping using Bittwise.cpp" -o $(BIN_DIR)/swap
@@ -31,14 +28,24 @@ arrays: $(BIN_DIR)
 	@$(CXX) $(CXXFLAGS) "Array Ex.cpp" -o $(BIN_DIR)/arrayex
 	@echo "Array suite compiled successfully."
 
+dsa: $(BIN_DIR)
+	@$(CXX) $(CXXFLAGS) "algorithms/sorting/quick_sort.cpp" -o $(BIN_DIR)/quicksort
+	@$(CXX) $(CXXFLAGS) "algorithms/searching/binary_search.cpp" -o $(BIN_DIR)/binsearch
+	@$(CXX) $(CXXFLAGS) "data_structures/stack/array_stack.cpp" -o $(BIN_DIR)/stack
+	@echo "Core DSA suite compiled successfully."
+
+test:
+	python3 scripts/run_tests.py
+
 clean:
 	rm -rf $(BIN_DIR) *.o *.exe
 	@echo "Cleaned build artifacts."
 
 help:
 	@echo "Available make targets:"
-	@echo "  all       - Compile all .cpp laboratory sources into $(BIN_DIR)/"
+	@echo "  all       - Prepare output directory"
 	@echo "  bitwise   - Compile bitwise manipulation programs"
-	@echo "  arrays    - Compile array and matrix algorithm programs"
-	@echo "  clean     - Remove generated binaries and objects"
-	@echo "  help      - Display this help message"
+	@echo "  arrays    - Compile array and matrix algorithms"
+	@echo "  dsa       - Compile core DSA programs"
+	@echo "  test      - Run Python verification tests"
+	@echo "  clean     - Remove build artifacts"
