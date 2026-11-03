@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sohom Paul | Systems & Full-Stack Engineer | Portfolio</title>
+  <meta name="description" content="Personal showcase & portfolio of Sohom Paul (@sohom-since-006) - CSE Student, Full-Stack Developer, Systems Programmer, and Founder of Clips Kinetics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(16, 24, 40, 0.75);
+      --card-border: rgba(0, 240, 255, 0.18);
+      --accent-cyan: #00f0ff;
+      --accent-pink: #ff007f;
+      --accent-purple: #9d4edd;
+      --accent-green: #00ff88;
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+      --mono-font: 'Fira Code', monospace;
+      --sans-font: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(0, 240, 255, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(255, 0, 127, 0.08) 0%, transparent 40%),
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+      color: var(--text-main);
+      font-family: var(--sans-font);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    /* Cyber Header */
+    header {
+      background: rgba(13, 17, 23, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .telemetry-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      font-family: var(--mono-font);
+      font-size: 0.85rem;
+      color: var(--accent-cyan);
+    }
+
+    .pulse {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      box-shadow: 0 0 10px var(--accent-green);
+      margin-right: 6px;
+      animation: pulseAnim 1.8s infinite;
+    }
+
+    @keyframes pulseAnim {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; transform: scale(1.15); }
+      100% { opacity: 0.4; }
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #fff 30%, var(--accent-cyan) 80%, var(--accent-pink) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 800px;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      font-family: var(--mono-font);
+      cursor: pointer;
+    }
+
+    .btn-cyan {
+      background: rgba(0, 240, 255, 0.12);
+      color: var(--accent-cyan);
+      border: 1px solid var(--accent-cyan);
+    }
+
+    .btn-cyan:hover {
+      background: var(--accent-cyan);
+      color: #000;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+    }
+
+    .btn-pink {
+      background: rgba(255, 0, 127, 0.12);
+      color: var(--accent-pink);
+      border: 1px solid var(--accent-pink);
+    }
+
+    .btn-pink:hover {
+      background: var(--accent-pink);
+      color: #fff;
+      box-shadow: 0 0 20px rgba(255, 0, 127, 0.5);
+    }
+
+    .btn-purple {
+      background: rgba(157, 78, 221, 0.15);
+      color: #d8b4fe;
+      border: 1px solid var(--accent-purple);
+    }
+
+    .btn-purple:hover {
+      background: var(--accent-purple);
+      color: #fff;
+      box-shadow: 0 0 20px rgba(157, 78, 221, 0.5);
+    }
+
+    /* Grid Layout */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      border-color: var(--accent-cyan);
+      transform: translateY(-3px);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--mono-font);
+    }
+
+    /* Terminal Box */
+    .terminal-box {
+      background: #05080f;
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    }
+
+    .terminal-header {
+      background: #0d131f;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-family: var(--mono-font);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .terminal-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .dot.red { background: #ff5f56; }
+    .dot.yellow { background: #ffbd2e; }
+    .dot.green { background: #27c93f; }
+
+    .terminal-body {
+      padding: 1.25rem;
+      font-family: var(--mono-font);
+      font-size: 0.9rem;
+      min-height: 220px;
+      max-height: 380px;
+      overflow-y: auto;
+      color: #c9d1d9;
+    }
+
+    .terminal-output {
+      margin-bottom: 1rem;
+      white-space: pre-wrap;
+    }
+
+    .terminal-input-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .terminal-prompt {
+      color: var(--accent-green);
+      font-weight: 700;
+    }
+
+    .terminal-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--accent-cyan);
+      font-family: var(--mono-font);
+      font-size: 0.95rem;
+    }
+
+    /* Tech Matrix Tags */
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .tag {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-family: var(--mono-font);
+      color: #e6edf3;
+      transition: all 0.2s ease;
+    }
+
+    .tag:hover {
+      border-color: var(--accent-cyan);
+      background: rgba(0, 240, 255, 0.1);
+      color: var(--accent-cyan);
+    }
+
+    /* Project Cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+    }
+
+    .project-card:hover {
+      border-color: var(--accent-pink);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(255, 0, 127, 0.15);
+    }
+
+    .project-card h3 {
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .project-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 0.8rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .project-link {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      font-family: var(--mono-font);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem 0 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-family: var(--mono-font);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- System Telemetry Header -->
+    <header>
+      <div class="telemetry-bar">
+        <div><span class="pulse"></span>SYSTEM STATUS: <span style="color:#00ff88;">ONLINE</span> (99.9% UPTIME)</div>
+        <div>COORDINATES: WEST BENGAL, INDIA [86.9833° E, 23.6833° N]</div>
+        <div>ID: SOHOM PAUL / @sohom-since-006</div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">SOHOM PAUL</h1>
+        <p class="hero-subtitle">
+          Computer Science & Engineering Student @ Asansol Engineering College. Crafting resilient full-stack systems, exploring low-level algorithms, and directing cinematic visuals at <strong>Clips Kinetics</strong>.
+        </p>
+
+        <div class="hero-links">
+          <a href="https://github.com/sohom-since-006" target="_blank" class="btn btn-cyan">
+            <span>⚡</span> GitHub Profile
+          </a>
+          <a href="https://clipskinetics.vercel.app/" target="_blank" class="btn btn-pink">
+            <span>🎬</span> Clips Kinetics Portfolio
+          </a>
+          <a href="https://www.linkedin.com/in/sohompaul06" target="_blank" class="btn btn-purple">
+            <span>🔗</span> LinkedIn
+          </a>
+          <a href="mailto:paulsohom777@gmail.com" class="btn btn-cyan">
+            <span>✉️</span> Get in Touch
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Interactive Terminal Emulator -->
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+        </div>
+        <div>sohom@matrix-os: ~ (type 'help' or 'projects')</div>
+        <div>bash</div>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div class="terminal-output" id="terminal-output">
+Operator Terminal initialized.
+Welcome, visitor. Type 'help' to view available system commands.
+        </div>
+        <div class="terminal-input-row">
+          <span class="terminal-prompt">visitor@sohom-terminal:~$</span>
+          <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" autofocus />
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Grid: Identity & Skills Matrix -->
+    <div class="grid-2">
+      <!-- Identity Spec -->
+      <div class="card">
+        <div class="card-title"><span>📡</span> OPERATOR SPECIFICATION</div>
+        <p style="color:var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+          Bridging low-level system logic, modern full-stack web architecture, and cinematic visual media.
+        </p>
+        <ul style="list-style:none; font-family:var(--mono-font); font-size:0.85rem; color:#c9d1d9; display: flex; flex-direction: column; gap: 0.6rem;">
+          <li><b style="color:var(--accent-cyan);">ROLE:</b> Full-Stack & Systems Engineer</li>
+          <li><b style="color:var(--accent-cyan);">EDUCATION:</b> B.Tech in CSE (2025–2029)</li>
+          <li><b style="color:var(--accent-cyan);">CAMPUS:</b> Asansol Engineering College</li>
+          <li><b style="color:var(--accent-cyan);">CREATIVE ARM:</b> Founder, Clips Kinetics</li>
+          <li><b style="color:var(--accent-cyan);">KEY FOCUS:</b> C/C++, Next.js, Python, Vision AI</li>
+        </ul>
+      </div>
+
+      <!-- Tech Arsenal Matrix -->
+      <div class="card">
+        <div class="card-title"><span>🛠️</span> TECH ARSENAL MATRIX</div>
+        <div class="tag-cloud">
+          <span class="tag">C</span>
+          <span class="tag">C++</span>
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Data Structures</span>
+          <span class="tag">Algorithms</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">IoT / Sensors</span>
+          <span class="tag">CapCut PC</span>
+          <span class="tag">Motion Graphics</span>
+          <span class="tag">Git / GitHub</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Showcase -->
+    <h2 style="font-family: var(--mono-font); font-size: 1.5rem; color: var(--accent-cyan); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+      <span>🚀</span> FLAGSHIP PROJECTS & REPOSITORIES
+    </h2>
+    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+      Select systems built for performance, social utility, and algorithmic excellence.
+    </p>
+
+    <div class="projects-grid">
+      <!-- AI Animal Classification -->
+      <div class="project-card">
+        <div>
+          <span style="font-size: 0.75rem; font-family: var(--mono-font); color: var(--accent-cyan);">[AI & COMPUTER VISION]</span>
+          <h3>AI Animal Classification System</h3>
+          <p>Hybrid expert system with Explainable AI, Computer Vision, Voice Recognition, and taxonomy classification.</p>
+        </div>
+        <div class="project-footer">
+          <span class="tag">Python / ML / CV</span>
+          <a href="https://github.com/sohom-since-006/AI-animal-classification-system" target="_blank" class="project-link">View Repo →</a>
+        </div>
+      </div>
+
+      <!-- Clips Kinetics -->
+      <div class="project-card">
+        <div>
+          <span style="font-size: 0.75rem; font-family: var(--mono-font); color: var(--accent-pink);">[CREATIVE AGENCY PLATFORM]</span>
+          <h3>Clips Kinetics Portfolio</h3>
+          <p>Official agency platform for high-retention video editing, motion design, and digital content solutions.</p>
+        </div>
+        <div class="project-footer">
+          <span class="tag">Next.js / Tailwind</span>
+          <a href="https://clipskinetics.vercel.app/" target="_blank" class="project-link">Live Site →</a>
+        </div>
+      </div>
+
+      <!-- MyCare Plus -->
+      <div class="project-card">
+        <div>
+          <span style="font-size: 0.75rem; font-family: var(--mono-font); color: var(--accent-green);">[HEALTHCARE & AI]</span>
+          <h3>MyCare Plus</h3>
+          <p>AI-Powered personalized healthcare assistant for clinical triage and tailored health management.</p>
+        </div>
+        <div class="project-footer">
+          <span class="tag">AI / Full-Stack</span>
+          <a href="https://github.com/sohom-since-006/Mycare-plus" target="_blank" class="project-link">View Repo →</a>
+        </div>
+      </div>
+
+      <!-- Khabar Chakra -->
+      <div class="project-card">
+        <div>
+          <span style="font-size: 0.75rem; font-family: var(--mono-font); color: var(--accent-purple);">[SOCIAL IMPACT]</span>
+          <h3>Khabar Chakra</h3>
+          <p>Community-driven food redistribution platform connecting surplus donors with NGOs and shelters to curb food waste.</p>
+        </div>
+        <div class="project-footer">
+          <span class="tag">Web / Realtime</span>
+          <a href="https://github.com/sohom-since-006/khabar-chakra" target="_blank" class="project-link">View Repo →</a>
+        </div>
+      </div>
+
+      <!-- JSON Formatter -->
+      <div class="project-card">
+        <div>
+          <span style="font-size: 0.75rem; font-family: var(--mono-font); color: var(--accent-cyan);">[DEVELOPER UTILITY]</span>
+          <h3>JSON Formatter & Validator</h3>
+          <p>Sleek, lightweight, theme-aware JSON parser and collapsible tree validator built with clean vanilla JavaScript.</p>
+        </div>
+        <div class="project-footer">
+          <span class="tag">HTML / CSS / JS</span>
+          <a href="https://github.com/sohom-since-006/json-formatter" target="_blank" class="project-link">View Repo →</a>
+        </div>
+      </div>
+
+      <!-- LeetCode & Systems -->
+      <div class="project-card">
+        <div>
+          <span style="font-size: 0.75rem; font-family: var(--mono-font); color: #ffbd2e;">[CORE LOGIC & DSA]</span>
+          <h3>LeetCode & C/C++ Systems</h3>
+          <p>Deep-dive algorithmic implementations, memory management, pointers, and optimized mathematical problems.</p>
+        </div>
+        <div class="project-footer">
+          <span class="tag">C / C++ / DSA</span>
+          <a href="https://github.com/sohom-since-006/LeetCode" target="_blank" class="project-link">View Repo →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Built with ❤️ by <a href="https://github.com/sohom-since-006" target="_blank">Sohom Paul</a> • B.Tech CSE @ Asansol Engineering College</p>
+      <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #57606a;">Repository: <a href="https://github.com/sohom-since-006/About-Me" target="_blank">sohom-since-006/About-Me</a></p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Terminal Interactive Engine
+    const input = document.getElementById('terminal-input');
+    const output = document.getElementById('terminal-output');
+    const terminalBody = document.getElementById('terminal-body');
+
+    const commands = {
+      help: `Available commands:
+  - about     : Display identity dossier
+  - skills    : List primary technical skills & tools
+  - projects  : List featured repositories & live systems
+  - clips     : Information on Clips Kinetics creative agency
+  - contact   : Display communication coordinates
+  - clear     : Clear the terminal console screen`,
+      about: `OPERATOR:    Sohom Paul (@sohom-since-006)
+EDUCATION:   B.Tech in Computer Science & Engineering (2025-2029)
+COLLEGE:     Asansol Engineering College, West Bengal, India
+MISSION:     Bridging low-level systems logic, modern full-stack engineering, and cinematic motion graphics.`,
+      skills: `CORE LANGUAGES : C, C++, Python, JavaScript, TypeScript, SQL, HTML5, CSS3
+FRAMEWORKS     : Next.js, React, Tailwind CSS, Node.js, Vite
+DATABASE/CLOUD : Supabase, PostgreSQL, Vercel, REST APIs
+CREATIVE SUITE : CapCut PC Pro, Motion Design, Visual Storytelling`,
+      projects: `1. AI Animal Classification System (OpenCV, Explainable AI)
+2. Clips Kinetics Portfolio (Next.js, Creative Agency)
+3. MyCare Plus (AI Healthcare Assistant)
+4. Khabar Chakra (Food Donation & Waste Reduction Network)
+5. JSON Formatter & Validator (Modern Developer Utility)
+6. LeetCode & C/C++ Systems (Algorithmic Logic)`,
+      clips: `CLIPS KINETICS:
+Official creative video editing & motion design agency.
+Live at: https://clipskinetics.vercel.app/
+Services: High-retention editing, motion graphics, audio mastering.`,
+      contact: `EMAIL:       paulsohom777@gmail.com
+GITHUB:      https://github.com/sohom-since-006
+LINKEDIN:    https://www.linkedin.com/in/sohompaul06
+INSTAGRAM:   https://instagram.com/sohom_since_006
+AGENCY:      https://clipskinetics.vercel.app/`
+    };
+
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        const cmd = input.value.trim().toLowerCase();
+        if (cmd === 'clear') {
+          output.innerHTML = '';
+        } else if (commands[cmd]) {
+          output.innerHTML += `\n<span style="color:#00ff88;">visitor@sohom-terminal:~$</span> ${input.value}\n${commands[cmd]}\n`;
+        } else if (cmd !== '') {
+          output.innerHTML += `\n<span style="color:#00ff88;">visitor@sohom-terminal:~$</span> ${input.value}\nCommand not recognized: '${cmd}'. Type 'help' for available commands.\n`;
+        }
+        input.value = '';
+        terminalBody.scrollTop = terminalBody.scrollHeight;
+      }
+    });
+  </script>
+</body>
+</html>
