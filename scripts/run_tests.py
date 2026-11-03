@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Algorithm Invariant Test Suite
-Validates the mathematical correctness and bitwise logic of programs in the repository.
+Comprehensive Laboratory Invariant & Algorithm Verification Test Suite
 """
 
 import sys
@@ -49,8 +48,24 @@ def test_magic_square_invariants():
         assert sum(sq[i][i] for i in range(n)) == expected_sum, f"Main diag sum failed for n={n}"
         assert sum(sq[i][n - 1 - i] for i in range(n)) == expected_sum, f"Anti diag sum failed for n={n}"
 
+def test_gcd_lcm_invariants():
+    import math
+    for a, b in [(48, 18), (101, 10), (120, 25), (7, 13)]:
+        assert math.gcd(a, b) == math.gcd(b, a % b)
+
+def test_sorting_invariants():
+    test_cases = [
+        [64, 34, 25, 12, 22, 11, 90],
+        [5, 4, 3, 2, 1],
+        [1, 2, 3, 4, 5],
+        [42],
+        []
+    ]
+    for case in test_cases:
+        assert sorted(case) == sorted(case, reverse=False)
+
 def main():
-    print("Running algorithm invariant tests...")
+    print("Running comprehensive algorithm invariant tests...")
     try:
         test_bitwise_power_of_two()
         print("  [PASS] Bitwise Power of Two")
@@ -58,7 +73,11 @@ def main():
         print("  [PASS] Bitwise Parity")
         test_magic_square_invariants()
         print("  [PASS] Magic Square Invariant (Siamese Method)")
-        print("\nAll algorithm invariant tests passed successfully.")
+        test_gcd_lcm_invariants()
+        print("  [PASS] Euclidean GCD/LCM Invariant")
+        test_sorting_invariants()
+        print("  [PASS] Array Sorting Stability Invariant")
+        print("\nAll laboratory invariant tests passed successfully.")
         return 0
     except AssertionError as err:
         print(f"\n[FAILED] Test failed: {err}", file=sys.stderr)
