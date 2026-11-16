@@ -48,10 +48,22 @@ def test_magic_square_invariants():
         assert sum(sq[i][i] for i in range(n)) == expected_sum, f"Main diag sum failed for n={n}"
         assert sum(sq[i][n - 1 - i] for i in range(n)) == expected_sum, f"Anti diag sum failed for n={n}"
 
-def test_gcd_lcm_invariants():
-    import math
-    for a, b in [(48, 18), (101, 10), (120, 25), (7, 13)]:
-        assert math.gcd(a, b) == math.gcd(b, a % b)
+def test_edit_distance_invariants():
+    def edit_dist(s1, s2):
+        dp = [[0] * (len(s2) + 1) for _ in range(len(s1) + 1)]
+        for i in range(len(s1) + 1): dp[i][0] = i
+        for j in range(len(s2) + 1): dp[0][j] = j
+        for i in range(1, len(s1) + 1):
+            for j in range(1, len(s2) + 1):
+                if s1[i - 1] == s2[j - 1]:
+                    dp[i][j] = dp[i - 1][j - 1]
+                else:
+                    dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1])
+        return dp[len(s1)][len(s2)]
+    
+    assert edit_dist("kitten", "sitting") == 3
+    assert edit_dist("flaw", "lawn") == 2
+    assert edit_dist("same", "same") == 0
 
 def test_sorting_invariants():
     test_cases = [
@@ -73,8 +85,8 @@ def main():
         print("  [PASS] Bitwise Parity")
         test_magic_square_invariants()
         print("  [PASS] Magic Square Invariant (Siamese Method)")
-        test_gcd_lcm_invariants()
-        print("  [PASS] Euclidean GCD/LCM Invariant")
+        test_edit_distance_invariants()
+        print("  [PASS] Levenshtein Edit Distance Invariant")
         test_sorting_invariants()
         print("  [PASS] Array Sorting Stability Invariant")
         print("\nAll laboratory invariant tests passed successfully.")
